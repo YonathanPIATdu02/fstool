@@ -1,0 +1,21 @@
+{
+  "name": "fstools",
+  "version": "1.0.0",
+  "description": "Gestion d'un système de fichier avec Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://iut-info.univ-reims.fr/gitlab/piat0005/fstools.git"
+  },
+  "author": "PIAT",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.18.2"
+  }
+}
