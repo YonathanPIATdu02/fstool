@@ -14,11 +14,13 @@ function printDirFiles(dirname, indent) {
 }
 
 function start(startFilename) {
-    var statSync = fs.lstatSync(startFilename).isDirectory();
-    printFilename(startFilename, statSync, "");
-    if (statSync) {
+    if (startFilename[startFilename.length-1] !== "/") {
+        startFilename += "/";
+    }
+    var startIsDir = fs.lstatSync(startFilename).isDirectory();
+    printFilename(startFilename, startIsDir, "");
+    if (startIsDir) {
         printDirFiles(startFilename, "  ");
     }
-}
-
-start(process.argv[2]);
+} 
+start(process.argv[2] || './');
