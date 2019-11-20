@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://iut-info.univ-reims.fr/gitlab/piat0005/fstools.git"
   },
-  "author": "PIAT",
+  "author": "PIAT & PETERS",
   "license": "ISC",
   "dependencies": {
     "cli-progress": "^3.3.1",
