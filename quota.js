@@ -10,6 +10,7 @@ const yarg = require('yargs') // eslint-disable-line
         'size', {
         alias: 's',
         type: 'number',
+        default: 5000,
         description: 'Quota maximum en Mo'
     }
     )
